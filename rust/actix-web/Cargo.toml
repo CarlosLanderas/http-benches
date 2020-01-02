@@ -1,0 +1,19 @@
+[package]
+name = "actix-web"
+version = "0.1.0"
+authors = ["clanderas"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "2.0.0"
+actix-rt = "1.0.0"
+failure = "0.1.6"
+serde = "1.0.104"
+serde_derive = "1.0.104"
+serde_json = "1.0.44"
+futures = "0.3.1"
+rand = "0.7.2"
+uuid = { version = "0.8" , features= ["v4"]}
+
