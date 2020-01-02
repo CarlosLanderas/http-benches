@@ -5,7 +5,7 @@ bombardier -c 125 -n 1000000 http://localhost:8080/user
 
 ## AspNetCore
 
-Build with dotnet build -c Release
+Built with dotnet build -c Release
 
 Statistics        Avg      Stdev        Max
 
@@ -25,6 +25,8 @@ Statistics        Avg      Stdev        Max
 
 ## Rust Actix Web
 
+Built with cargo build --release
+
 
 Statistics        Avg      Stdev        Max
 
@@ -43,7 +45,7 @@ Statistics        Avg      Stdev        Max
 
 ## Golang http
 
-Build with go build -ldflags "-s -w"
+Built with go build -ldflags "-s -w"
 
 Statistics        Avg      Stdev        Max
 
