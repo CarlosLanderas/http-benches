@@ -9,17 +9,17 @@ Built with dotnet build -c Release
 
 Statistics        Avg      Stdev        Max
 
-  Reqs/sec      1333.65     427.29    3846.11
+  Reqs/sec      5271.47    1478.68   14494.03
 
-  Latency       93.61ms    32.85ms   841.00ms
+  Latency       23.74ms     5.55ms   273.69ms
 
   HTTP codes:
 
-    1xx - 0, 2xx - 0, 3xx - 0, 4xx - 0, 5xx - 100000
+    1xx - 0, 2xx - 99979, 3xx - 0, 4xx - 0, 5xx - 21
 
     others - 0
 
-  Throughput:   **320.66KB/s**
+  Throughput:     **1.26MB/s**
 
 
 
