@@ -46,7 +46,9 @@ Statistics        Avg      Stdev        Max
 
 ## Golang http
 
+Having a connection reset by peer problem:
 
+https://github.com/jinzhu/gorm/issues/2081
 
 
 
