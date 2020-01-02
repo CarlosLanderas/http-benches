@@ -22,7 +22,6 @@ async fn main() -> std::io::Result<()>  {
                 ::new("postgres://admin:example@localhost");
     let pool = r2d2::Pool::builder().build(manager).expect("Failed to create pool.");
 
-
     HttpServer::new(move || {
         App::new()
             .data(pool.clone())
