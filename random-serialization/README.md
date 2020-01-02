@@ -3,7 +3,7 @@ Benchmark results using:
 
 bombardier -c 125 -n 1000000 http://localhost:8080/user
 
-**aspnetcore
+## AspNetCore
 
 Statistics        Avg      Stdev        Max
 
@@ -21,7 +21,7 @@ Statistics        Avg      Stdev        Max
   
   
 
-**rust actix-web
+## Rust Actix Web
 
 
 Statistics        Avg      Stdev        Max
