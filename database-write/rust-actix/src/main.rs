@@ -48,16 +48,16 @@ fn add_user(pool: web::Data<Pool>) -> Result<i32, diesel::result::Error> {
 
     use self::schema::users::dsl::*;
 
-    let mail = format!("{}{}",Uuid::new_v4().to_string(),"@host.com");
+    let user =  NewUser {
+        email: format!("{}{}", Uuid::new_v4().to_string(), "@host.com"),
+        is_enabled: true
+    };
 
     let conn = pool.get().unwrap();
 
     let new_user : User = diesel::
         insert_into(schema::users::table)
-        .values((
-             email.eq(mail),
-             is_enabled.eq(true)
-            ))
+        .values(user)
         .get_result(&conn)?;
 
     Ok(new_user.id)

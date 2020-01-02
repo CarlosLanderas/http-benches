@@ -29,9 +29,9 @@ Built with cargo build --release
 
 Statistics        Avg      Stdev        Max
 
-  Reqs/sec      4609.69     569.11    5302.21
+  Reqs/sec      4792.27     767.33   22592.74
 
-  Latency       27.08ms    10.29ms   177.36ms
+  Latency       26.16ms     9.43ms   146.68ms
 
   HTTP codes:
 
@@ -39,7 +39,8 @@ Statistics        Avg      Stdev        Max
 
     others - 0
 
-  Throughput:     **1.13MB/s**
+  Throughput:     **1.17MB/s**
+
 
 
 
