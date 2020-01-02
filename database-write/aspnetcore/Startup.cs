@@ -33,12 +33,19 @@ namespace aspnetcore
             {
                 endpoints.MapPost("/user", async context =>
                 {
-                    var dbContext = context.RequestServices.GetService<DataContext>();
-                    var user = new User {Email = $"{Guid.NewGuid()}@host.com", IsEnabled = true};
-                    await dbContext.AddAsync(user);
-                    await dbContext.SaveChangesAsync();
+                    try
+                    {
+                        var dbContext = context.RequestServices.GetService<DataContext>();
+                        var user = new User {Email = $"{Guid.NewGuid()}@host.com", IsEnabled = true};
+                        await dbContext.AddAsync(user);
+                        await dbContext.SaveChangesAsync();
+                        await context.Response.WriteAsync(user.Id.ToString());
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
 
-                    await context.Response.WriteAsync(user.Id.ToString());
                 });
             });
         }

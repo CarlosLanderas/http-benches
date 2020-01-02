@@ -9,19 +9,17 @@ Built with dotnet build -c Release
 
 Statistics        Avg      Stdev        Max
 
-  Reqs/sec      5271.47    1478.68   14494.03
+  Reqs/sec      5129.50    1696.08   10090.54
 
-  Latency       23.74ms     5.55ms   273.69ms
+  Latency       24.36ms    42.04ms      1.23s
 
   HTTP codes:
 
-    1xx - 0, 2xx - 99979, 3xx - 0, 4xx - 0, 5xx - 21
+    1xx - 0, 2xx - 100000, 3xx - 0, 4xx - 0, 5xx - 0
 
     others - 0
 
-  Throughput:     **1.26MB/s**
-
-
+  Throughput:     **1.23MB/s**
 
 
 ## Rust Actix Web
