@@ -1,0 +1,8 @@
+module go-gorm
+
+go 1.13
+
+require (
+	github.com/beevik/guid v0.0.0-20170504223318-d0ea8faecee0
+	github.com/jinzhu/gorm v1.9.11
+)
