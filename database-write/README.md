@@ -46,9 +46,20 @@ Statistics        Avg      Stdev        Max
 
 ## Golang http
 
-Having a connection reset by peer problem:
+Statistics        Avg      Stdev        Max
 
-https://github.com/jinzhu/gorm/issues/2081
+  Reqs/sec      7732.64    1578.78   10715.33
+
+  Latency       16.13ms     6.21ms   142.05ms
+
+  HTTP codes:
+
+    1xx - 0, 2xx - 100000, 3xx - 0, 4xx - 0, 5xx - 0
+
+    others - 0
+
+  Throughput:     **1.89MB/s**
+
 
 
 
