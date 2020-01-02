@@ -46,6 +46,8 @@ Statistics        Avg      Stdev        Max
 
 ## Golang http
 
+Built with go build -ldflags "-s -w"
+
 Statistics        Avg      Stdev        Max
 
   Reqs/sec      7732.64    1578.78   10715.33
