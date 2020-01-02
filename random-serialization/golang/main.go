@@ -8,6 +8,8 @@ import (
 	"net/http"
 )
 
+var letter = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+
 type User struct {
 	Id    string `json:"id"`
 	Email string `json:"email"`
@@ -32,7 +34,6 @@ func main() {
 }
 
 func RandomString(n int) string {
-	var letter = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
 
 	b := make([]rune, n)
 	for i := range b {
