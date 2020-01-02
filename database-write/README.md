@@ -26,6 +26,20 @@ Statistics        Avg      Stdev        Max
 
 ## Rust Actix Web
 
+Statistics        Avg      Stdev        Max
+
+  Reqs/sec      4609.69     569.11    5302.21
+
+  Latency       27.08ms    10.29ms   177.36ms
+
+  HTTP codes:
+
+    1xx - 0, 2xx - 100000, 3xx - 0, 4xx - 0, 5xx - 0
+
+    others - 0
+
+  Throughput:     1.13MB/s
+
 
 
 ## Golang http

@@ -48,7 +48,7 @@ fn add_user(pool: web::Data<Pool>) -> Result<i32, diesel::result::Error> {
 
     use self::schema::users::dsl::*;
 
-    let mail = Uuid::new_v4().to_string();
+    let mail = format!("{}{}",Uuid::new_v4().to_string(),"@host.com");
 
     let conn = pool.get().unwrap();
 
