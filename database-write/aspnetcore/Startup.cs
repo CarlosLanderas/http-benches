@@ -20,7 +20,7 @@ namespace aspnetcore
         {
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseNpgsql("Host=localhost;Database=test;Username=admin;Password=example");
+                options.UseNpgsql("Host=localhost;Username=admin;Password=example");
             });
         }
 
