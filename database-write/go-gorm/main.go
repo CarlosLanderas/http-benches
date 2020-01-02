@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"strconv"
+	"time"
 
 	"github.com/beevik/guid"
 	"github.com/jinzhu/gorm"
@@ -38,6 +39,9 @@ func main() {
 	var err error
 
 	db, err = gorm.Open("postgres", "user=admin password=example sslmode=disable")
+	db.DB().SetMaxOpenConns(90)
+	db.DB().SetMaxIdleConns(5)
+	db.DB().SetConnMaxLifetime(time.Minute)
 
 	defer db.Close()
 
