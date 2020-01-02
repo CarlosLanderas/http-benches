@@ -12,24 +12,20 @@ import (
 
 var db *gorm.DB
 
-type Users struct {
-	db *gorm.DB
-}
-
 type User struct {
 	gorm.Model
 	Email     string `gorm:"type:varchar(50);unique;not null"`
 	IsEnabled bool   `gorm:"default:false`
 }
 
-func (users *Users) add_user(w http.ResponseWriter, r *http.Request) {
+func add_user(w http.ResponseWriter, r *http.Request) {
 
 	user := User{
 		Email:     guid.NewString(),
 		IsEnabled: true,
 	}
 
-	if err := users.db.Save(&user).Error; err != nil {
+	if err := db.Save(&user).Error; err != nil {
 		panic(err)
 	}
 
@@ -39,7 +35,9 @@ func (users *Users) add_user(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	db, err := gorm.Open("postgres", "user=admin password=example sslmode=disable")
+	var err error
+
+	db, err = gorm.Open("postgres", "user=admin password=example sslmode=disable")
 
 	defer db.Close()
 
@@ -47,9 +45,9 @@ func main() {
 		panic(err)
 	}
 
-	users := Users{db: db.AutoMigrate(&User{})}
+	db.AutoMigrate(&User{})
 
-	http.HandleFunc("/user", users.add_user)
+	http.HandleFunc("/user", add_user)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 
 }
