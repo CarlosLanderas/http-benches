@@ -49,17 +49,18 @@ Built with go build -ldflags "-s -w"
 
 Statistics        Avg      Stdev        Max
 
-  Reqs/sec    122809.06    6777.27  164394.99
-
-  Latency        1.01ms   456.27us    19.41ms
-
+  Reqs/sec    123880.18    5752.52  163997.09
+  
+  Latency        1.01ms   452.26us    18.29ms
+  
   HTTP codes:
-
+  
     1xx - 0, 2xx - 1000000, 3xx - 0, 4xx - 0, 5xx - 0
-
+    
     others - 0
+    
+  Throughput:    **29.54MB/s**
 
-  Throughput:    **29.28MB/s**
 
 
 
