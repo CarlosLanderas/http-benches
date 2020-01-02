@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/clanderas/source/labs/http-benches/aspnetcore/aspnetcore.csproj": {}
+  },
+  "projects": {
+    "/home/clanderas/source/labs/http-benches/aspnetcore/aspnetcore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/clanderas/source/labs/http-benches/aspnetcore/aspnetcore.csproj",
+        "projectName": "aspnetcore",
+        "projectPath": "/home/clanderas/source/labs/http-benches/aspnetcore/aspnetcore.csproj",
+        "packagesPath": "/home/clanderas/.nuget/packages/",
+        "outputPath": "/home/clanderas/source/labs/http-benches/aspnetcore/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/clanderas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/clanderas/.dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
