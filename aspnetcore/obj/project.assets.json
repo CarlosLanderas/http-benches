@@ -54,13 +54,15 @@
       "outputPath": "/home/clanderas/source/labs/http-benches/aspnetcore/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/clanderas/.nuget/NuGet/NuGet.Config"
+        "/home/clanderas/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -17,7 +18,9 @@ namespace aspnetcore
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
+            new HostBuilder()
+                .ConfigureWebHostDefaults(builder => builder
+                    .UseStartup<Startup>()
+                    .ConfigureKestrel(config => config.Listen(IPAddress.Loopback, 8080)));
     }
 }
