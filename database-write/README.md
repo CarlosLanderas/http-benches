@@ -24,6 +24,8 @@ Statistics        Avg      Stdev        Max
 
 ## Rust Actix Web
 
+Built with cargo build --release
+
 Statistics        Avg      Stdev        Max
 
   Reqs/sec      4609.69     569.11    5302.21
