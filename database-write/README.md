@@ -36,7 +36,7 @@ Statistics        Avg      Stdev        Max
 
     others - 0
 
-  Throughput:     1.13MB/s
+  Throughput:     **1.13MB/s**
 
 
 
