@@ -3,7 +3,7 @@ Benchmark results using:
 
 bombardier -c 125 -n 1000000 http://localhost:8080/user
 
-aspnetcore
+**aspnetcore
 
 Statistics        Avg      Stdev        Max
 
@@ -19,8 +19,10 @@ Statistics        Avg      Stdev        Max
     
   Throughput:    33.34MB/s
   
+  
 
-rust actix-web
+**rust actix-web
+
 
 Statistics        Avg      Stdev        Max
 
