@@ -5,3 +5,5 @@
 [Random and serialization benches](https://github.com/CarlosLanderas/http-benches/tree/master/random-serialization)
 
 [Postgres Database write benches](https://github.com/CarlosLanderas/http-benches/tree/master/postgres-db-write)
+
+[Mongo db Database write benches](https://github.com/CarlosLanderas/http-benches/tree/master/mongo-db-write)
