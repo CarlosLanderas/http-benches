@@ -4,4 +4,4 @@
 
 [Random and serialization benches](https://github.com/CarlosLanderas/http-benches/tree/master/random-serialization)
 
-[Postgres Database write benches](https://github.com/CarlosLanderas/http-benches/tree/master/database-write)
+[Postgres Database write benches](https://github.com/CarlosLanderas/http-benches/tree/master/postgres-db-write)
