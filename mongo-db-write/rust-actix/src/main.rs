@@ -22,6 +22,9 @@ async fn main() -> std::io::Result<()> {
     let uri = "mongodb://root:example@localhost:27017";
     let mongo_db = Client::with_uri_str(uri).unwrap();
     let db = mongo_db.database("main");
+
+    db.create_collection("books", None).unwrap();
+
     let books = db.collection("books");
     
     HttpServer::new(move || {
@@ -36,20 +39,19 @@ async fn main() -> std::io::Result<()> {
 }
 
 #[post("/books")]
-async fn post_book(books: web::Data<Collection>) -> impl Responder {
+async fn post_book(books: web::Data<Collection>) -> Result<HttpResponse> {
     let id = Uuid::new_v4().to_string();
     let book_name = format!("Book{}", id);
 
-    let res = books
-        .insert_one(
+    books.insert_one(
             doc! {
                 "name": book_name
             },
             None,
         )
         .unwrap();
-    
+
     Ok(HttpResponse::Ok()
         .content_type("text/plain")
-        .body(id.into()))
+        .body::<String>(id.into()))
 }
