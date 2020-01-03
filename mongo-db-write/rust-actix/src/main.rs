@@ -1,19 +1,10 @@
 #[macro_use]
 extern crate bson;
 
-use actix_web::{post, web, App, Error, HttpRequest, HttpResponse, HttpServer, Responder, Result};
+use actix_web::{post, web, App, HttpResponse, HttpServer, Result};
 use bson::doc;
-use bson::oid::ObjectId;
 use mongodb::{Client, Collection};
-use serde::{Deserialize, Serialize};
 use uuid::Uuid;
-
-#[derive(Serialize, Deserialize, Debug)]
-pub struct Book {
-    #[serde(rename = "_id")] // Use MongoDB's special primary key field name when serializing
-    pub id: ObjectId,
-    pub name: String,
-}
 
 #[rustfmt::skip]
 #[actix_rt::main]
