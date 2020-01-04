@@ -5,6 +5,23 @@ bombardier --method=POST -n 100000 -c 125 http://localhost:8080/books
 
 ## AspNetCore
 
+Built with dotnet build -C Release
+
+Statistics        Avg      Stdev        Max
+
+  Reqs/sec     21804.69    2632.89   36775.64
+
+  Latency        5.75ms     4.37ms    92.70ms
+
+  HTTP codes:
+
+    1xx - 0, 2xx - 100000, 3xx - 0, 4xx - 0, 5xx - 0
+
+    others - 0
+
+  Throughput:     **5.88MB/s**
+
+
 
 
 ## Rust Actix Web
