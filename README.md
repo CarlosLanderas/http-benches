@@ -9,3 +9,23 @@
 :arrow_right: [Mongo db Database write benchmarks](https://github.com/CarlosLanderas/http-benches/tree/master/mongo-db-write)
 
 :arrow_right: [Files write benchmarks](https://github.com/CarlosLanderas/http-benches/tree/master/files-write)
+
+
+### :computer: Computer Specs:
+
+Operating System: Manjaro Linux 
+
+KDE Plasma Version: 5.17.4
+
+KDE Frameworks Version: 5.65.0
+
+Qt Version: 5.14.0
+
+Kernel Version: 5.3.18-1-MANJARO
+
+OS Type: 64-bit
+
+Processors: 12 × Intel® Core™ i7-8750H CPU @ 2.20GHz
+
+Memory: 31,3 GiB of RAM
+
