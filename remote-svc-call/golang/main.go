@@ -10,6 +10,7 @@ import (
 )
 
 var url = "https://pokeapi.co/api/v2/ability"
+var contentType = "application/json"
 
 type Ability struct {
 	Id           int    `json:"id"`
@@ -68,7 +69,7 @@ func (api *Api) Call(w http.ResponseWriter, r *http.Request) {
 	body, _ := json.Marshal(ability)
 
 	w.WriteHeader(http.StatusOK)
-	w.Header().Add("Content-Type", "application/json")
+	w.Header().Add("Content-Type", contentType)
 	w.Write(body)
 }
 
