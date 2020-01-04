@@ -92,13 +92,12 @@ func getBooks(w http.ResponseWriter, r *http.Request) {
 func booksHandler() http.HandlerFunc {
 
 	return func(w http.ResponseWriter, r *http.Request) {
-
-		if r.Method == "POST" {
+		switch r.Method {
+		case "POST":
 			postBook(w, r)
-		} else if r.Method == "GET" {
+		case "GET":
 			getBooks(w, r)
-
-		} else {
+		default:
 			http.NotFound(w, r)
 		}
 	}
