@@ -19,7 +19,7 @@ Built with dotnet build -C Release
 
     others - 0
 
-  &#x1F53C; Throughput:     **7.23MB/s**
+  &#x1F53C; Throughput:  **7.23MB/s**
 
 
 ## Rust Actix Web
@@ -34,9 +34,9 @@ Built with go build -ldflags "-s -w"
 
 :clock1: Statistics        Avg      Stdev        Max
 
-  Reqs/sec     34682.14   10241.18   53007.17
+  Reqs/sec     33266.34   11584.12   57608.95
 
-  Latency        3.59ms     7.48ms   105.43ms
+  Latency        3.76ms     6.63ms    92.67ms
 
   HTTP codes:
 
@@ -44,7 +44,8 @@ Built with go build -ldflags "-s -w"
 
     others - 0
 
-  &#x1F53C; Throughput:     **9.54MB/s**
+  &#x1F53C; Throughput: **9.12MB/s**
+
 
 
 

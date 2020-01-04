@@ -19,24 +19,14 @@ func main() {
 
 	http.HandleFunc("/file", func(w http.ResponseWriter, r *http.Request) {
 
-		ch := make(chan string)
+		fileName := guid.NewString()
+		contents := fmt.Sprintf("%s %s","The content of the file is", fileName)
 
-		go func() {
+		err := ioutil.WriteFile(fmt.Sprintf("./files/%s", fileName), []byte(contents), 0700)
 
-			fileName := guid.NewString()
-			contents := []byte("The content of the file is")
-			contents = append(contents, fileName...)
-
-			err := ioutil.WriteFile(fmt.Sprintf("./files/%s", fileName), contents, 0700)
-
-			ch <- fileName
-
-			if err != nil {
-				panic(err)
-			}
-		}()
-
-		fileName := <-ch
+		if err != nil {
+			panic(err)
+		}
 
 		w.WriteHeader(http.StatusOK)
 		w.Header().Add("Content-Type", "text/plain")
