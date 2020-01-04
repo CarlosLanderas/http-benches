@@ -19,7 +19,7 @@ Statistics        Avg      Stdev        Max
 
     others - 0
 
-  (&#x1F53C;) Throughput:    **33.34MB/s**
+  &#x1F53C; Throughput:    **33.34MB/s**
 
 
 
@@ -40,7 +40,7 @@ Statistics        Avg      Stdev        Max
 
     others - 0
 
-  (&#x1F53C;) Throughput:    **53.95MB/s**
+  &#x1F53C; Throughput:    **53.95MB/s**
 
 
 ## Golang http
@@ -59,7 +59,7 @@ Statistics        Avg      Stdev        Max
     
     others - 0
     
-  (&#x1F53C;) Throughput:    **29.54MB/s**
+  &#x1F53C; Throughput:    **29.54MB/s**
 
 
 
