@@ -1,7 +1,7 @@
 Benchmark results using:
 
 
-bombardier --method=POST -n 100000 -c 125 http://localhost:8080/books
+bombardier --method=POST -n 100000 -c 125 http://localhost:8080/file
 
 ## AspNetCore
 
