@@ -29,6 +29,21 @@ Statistics        Avg      Stdev        Max
 
 ## Golang http
 
+Built with go build -ldflags "-s -w"
+
+Statistics        Avg      Stdev        Max
+
+  Reqs/sec     23724.98    6870.73   29740.66
+
+  Latency        5.27ms    11.58ms   421.52ms
+
+  HTTP codes:
+    1xx - 0, 2xx - 100000, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+
+  Throughput:     **6.33MB/s**
+
+
 
 
 
