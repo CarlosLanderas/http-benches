@@ -20,7 +20,7 @@ Statistics        Avg      Stdev        Max
 
     others - 0
 
-  (&#x1F53C;) Throughput:     **5.88MB/s**
+  &#x1F53C; Throughput:     **5.88MB/s**
 
 
 
@@ -41,7 +41,7 @@ Statistics        Avg      Stdev        Max
 
     others - 0
 
-  (&#x1F53C;) Throughput:     **5.30MB/s**
+  &#x1F53C; Throughput:     **5.30MB/s**
 
 
 
@@ -61,7 +61,7 @@ Statistics        Avg      Stdev        Max
 
     others - 0
 
-  (&#x1F53C;) Throughput:     **6.33MB/s**
+  &#x1F53C; Throughput:     **6.33MB/s**
 
 
 
