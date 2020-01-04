@@ -7,3 +7,5 @@
 :arrow_right: [Postgres Database write benches](https://github.com/CarlosLanderas/http-benches/tree/master/postgres-db-write)
 
 :arrow_right: [Mongo db Database write benches](https://github.com/CarlosLanderas/http-benches/tree/master/mongo-db-write)
+
+:arrow_right: [Files write benches](https://github.com/CarlosLanderas/http-benches/tree/master/files-write)
