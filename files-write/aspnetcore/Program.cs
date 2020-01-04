@@ -58,7 +58,7 @@ namespace aspnetcore
                     guidBytes.CopyTo(fileContents.Slice(index, guid.Length));
                     
                     // Path does not accept ReadOnlySpan<char> so we need guid string
-                    //Span overload not available, so we use ToArray()
+                    // Span overload not available, so we use ToArray()
                     File.WriteAllBytes($"files/{guid}", fileContents.ToArray());
                     
                     await context.Response.BodyWriter.WriteAsync(guidBytes);
