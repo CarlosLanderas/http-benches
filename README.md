@@ -10,6 +10,8 @@
 
 :arrow_right: [Files write benchmarks](https://github.com/CarlosLanderas/http-benches/tree/master/files-write)
 
+:arrow_right: [Remote service call](https://github.com/CarlosLanderas/http-benches/tree/master/remote-svc-call)
+
 
 ### :computer: Computer Specs:
 
