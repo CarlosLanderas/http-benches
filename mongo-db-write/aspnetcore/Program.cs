@@ -66,7 +66,6 @@ namespace aspnetcore
                     var results = await books.FindAsync(b => true);
                     using var ms = new MemoryStream();
                     await JsonSerializer.SerializeAsync(ms, results.ToList(), jsonOptions);
-                    ms.Position = 0;
                     context.Response.ContentType = contentType;
                     await context.Response.BodyWriter.WriteAsync(ms.ToArray());
                 });
