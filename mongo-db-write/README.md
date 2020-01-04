@@ -8,7 +8,7 @@ bombardier --method=POST -n 100000 -c 125 http://localhost:8080/books
 
 Built with dotnet build -C Release
 
-Statistics        Avg      Stdev        Max
+:clock1: Statistics        Avg      Stdev        Max
 
   Reqs/sec     21804.69    2632.89   36775.64
 
@@ -29,7 +29,7 @@ Statistics        Avg      Stdev        Max
 
 Built with cargo build --release
 
-Statistics        Avg      Stdev        Max
+:clock1: Statistics        Avg      Stdev        Max
 
   Reqs/sec     20285.40    2093.34   22217.26
 
@@ -49,7 +49,7 @@ Statistics        Avg      Stdev        Max
 
 Built with go build -ldflags "-s -w"
 
-Statistics        Avg      Stdev        Max
+:clock1: Statistics        Avg      Stdev        Max
 
   Reqs/sec     23724.98    6870.73   29740.66
 
