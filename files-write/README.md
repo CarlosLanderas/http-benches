@@ -27,7 +27,19 @@ Built with dotnet build -C Release
 
 Built with cargo build --release
 
+:clock1: Statistics        Avg      Stdev        Max
 
+  Reqs/sec     52490.27    3847.50   60946.02
+
+  Latency        2.37ms     2.57ms    34.14ms
+
+  HTTP codes:
+
+    1xx - 0, 2xx - 100000, 3xx - 0, 4xx - 0, 5xx - 0
+
+    others - 0
+
+  &#x1F53C; Throughput: **13.67MB/s**
 
 ## Golang http
 
