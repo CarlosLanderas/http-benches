@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -60,8 +59,6 @@ func (api *Api) GetAbility(index int) (*Ability, error) {
 func (api *Api) Call(w http.ResponseWriter, r *http.Request) {
 
 	counter := api.GetCounter()
-
-	fmt.Println("Executing request to " + strconv.Itoa(counter))
 	ability, err := api.GetAbility(counter)
 
 	if err != nil {
