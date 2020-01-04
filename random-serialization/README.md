@@ -7,7 +7,7 @@ bombardier -c 125 -n 1000000 http://localhost:8080/user
 
 Built with dotnet build -c Release
 
-Statistics        Avg      Stdev        Max
+:clock1: Statistics        Avg      Stdev        Max
 
   Reqs/sec    133441.23   14902.67  181375.34
 
@@ -28,7 +28,7 @@ Statistics        Avg      Stdev        Max
 Built with cargo build --release
 
 
-Statistics        Avg      Stdev        Max
+:clock1: Statistics        Avg      Stdev        Max
 
   Reqs/sec    218368.40   15628.36  279702.25
 
@@ -47,7 +47,7 @@ Statistics        Avg      Stdev        Max
 
 Built with go build -ldflags "-s -w"
 
-Statistics        Avg      Stdev        Max
+:clock1: Statistics        Avg      Stdev        Max
 
   Reqs/sec    123880.18    5752.52  163997.09
   
