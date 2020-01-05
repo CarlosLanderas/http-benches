@@ -29,10 +29,15 @@ Built with dotnet build -C Release
 Built with cargo build --release
 
 :clock1: Statistics        Avg      Stdev        Max
+
   Reqs/sec       206.30     260.07    1047.29
+
   Latency      128.93ms    12.43ms   175.73ms
+
   HTTP codes:
+
     1xx - 0, 2xx - 100, 3xx - 0, 4xx - 0, 5xx - 0
+
     others - 0
 
   &#x1F53C; Throughput:  **52.81KB/s**
