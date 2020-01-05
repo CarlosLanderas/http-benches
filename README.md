@@ -4,7 +4,7 @@
 
 :arrow_right: [Random and serialization benchmarks](https://github.com/CarlosLanderas/http-benches/tree/master/random-serialization)
 
-:arrow_right: [Postgres Database write benchmarks](https://github.com/CarlosLanderas/http-benches/tree/master/postgres-db-write)
+:arrow_right: [Postgres ORM Database Write benchmarks](https://github.com/CarlosLanderas/http-benches/tree/master/postgres-orm-write)
 
 :arrow_right: [Mongo db Database write benchmarks](https://github.com/CarlosLanderas/http-benches/tree/master/mongo-db-write)
 
@@ -15,7 +15,7 @@
 
 ### :computer: Computer Specs:
 
-Operating System: Manjaro Linux 
+Operating System: Manjaro Linux
 
 KDE Plasma Version: 5.17.4
 
